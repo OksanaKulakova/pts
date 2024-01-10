@@ -1,0 +1,52 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FAF8F8;
+    z-index: 10;
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    gap: 16px;
+}
+
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 56px;
+    background-color: #FAF8F8;
+    border: none;
+    cursor: pointer;
+}
+
+.nav--desctop {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-mobile {
+        display: none;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 16px;
+        height: 56px;
+        padding: 0 32px;
+    }
+      
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex: 1 0 0;
+    }
+    
+    .nav-item:last-child {
+        justify-content: space-between;
+    }
+}
